@@ -19,15 +19,15 @@ body {
 
 button {
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #c18133;
+    color: rgb(15, 15, 15);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #c18133;
 }
 
 input[type="color"],
