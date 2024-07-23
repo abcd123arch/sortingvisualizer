@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <div class="controls">
+        <button onclick="generateArray()">New Array</button>
+        <label for="sizeSlider">Size</label>
+        <input type="range" id="sizeSlider" min="10" max="200" value="100" oninput="generateArray()">
+        <label for="speedSlider">Speed</label>
+        <input type="range" id="speedSlider" min="1" max="100" value="50" oninput="updateSpeed()">
+        <input type="color" id="barColor" value="#FF0000" oninput="renderArray()">
+        <button onclick="sortArray('bubbleSort')">Bubble Sort</button>
+        <button onclick="sortArray('selectionSort')">Selection Sort</button>
+        <button onclick="sortArray('insertionSort')">Insertion Sort</button>
+        <button onclick="sortArray('quickSort')">Quick Sort</button>
+        <button onclick="sortArray('mergeSort')">Merge Sort</button>
+        <button onclick="sortArray('heapSort')">Heap Sort</button>
+    </div>
+    <div id="arrayContainer"></div>
+    <script src="scripts.js"></script>
+    <script src="algorithms/bubbleSort.js"></script>
+    <script src="algorithms/selectionSort.js"></script>
+    <script src="algorithms/insertionSort.js"></script>
+    <script src="algorithms/quickSort.js"></script>
+    <script src="algorithms/mergeSort.js"></script>
+    <script src="algorithms/heapSort.js"></script>
+</body>
+</html>
